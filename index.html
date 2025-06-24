@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petualangan Snoopy!❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+
+    <header class="hero">
+        <h1>Hai, knock knock</h1>
+        <p>Snoopy punya misi rahasia untukmu! <br> Temukan 5 item tersembunyi di halaman ini untuk membuka hadiah.</p>
+        <div class="counter">Item Ditemukan: <span id="foundCount">0</span>/5</div>
+    </header>
+
+    <main class="game-area">
+        <img src="c:\Users\User\Downloads\snoopy_sleep (2).png" class="hidden-item" data-clue="clue1" alt="Snoopy Tidur" style="top: 15%; left: 10%;">
+        <img src="c:\Users\User\Downloads\woodstock.png" class="hidden-item" data-clue="clue2" alt="Woodstock" style="top: 30%; right: 5%;">
+        <img src="c:\Users\User\Downloads\snoopy_bone.png" class="hidden-item" data-clue="clue3" alt="Tulang Snoopy" style="bottom: 20%; left: 25%;">
+        <img src="c:\Users\User\Downloads\charliebrown.png" class="hidden-item" data-clue="clue4" alt="Baju Charlie Brown" style="top: 50%; left: 5%;">
+        <img src="c:\Users\User\Downloads\snoopy_house.png" class="hidden-item" data-clue="clue5" alt="Rumah Anjing Snoopy" style="top: 5%; right: 30%;">
+        
+        <div id="clueDisplay" class="clue-display"></div>
+
+        <section id="finalGift" class="hidden-gift">
+            <h2>🎉 Selamat! Hadiah Spesial untukmu! 🎉</h2>
+            <div class="gift-content">
+                <p>Setelah petualangan mencari harta karun dengan Snoopy, akhirnya kamu menemukannya!</p>
+                <p>Ini dia hadiah utamanya, sebuah galeri kenangan manis kita:</p>
+                <div class="gallery">
+                    <img src="c:\Users\User\Downloads\kartut1.jpg" alt="Kenangan Manis 1">
+                    <img src="c:\Users\User\Downloads\animasi.jpg" alt="Kenangan Manis 2">
+                    <img src="c:\Users\User\Downloads\kartut2.jpg" alt="Kenangan Manis 3">
+                    </div>
+                <p>Terima kasih sudah selalu ada di sisiku, sayang. Aku sayang kamu!</p>
+            </div>
+            <button id="playGiftSound" class="gift-button"><i class="fas fa-music"></i> Mainkan Kejutan Suara!</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; sn00py❤️</p>
+    </footer>
+
+    <audio id="itemFoundSound" src="item_found.mp3" preload="auto"></audio>
+    <audio id="giftRevealSound" src="gift_reveal.mp3" preload="auto"></audio>
+    <audio id="backgroundMusic" src="c:\Users\User\Downloads\About You - The 1975.mp3" loop preload="auto"></audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
